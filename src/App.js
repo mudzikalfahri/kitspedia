@@ -1,11 +1,17 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { NavLink, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Detail from "./pages/detail/detail";
 import Home from "./pages/home/home";
 import Search from "./pages/search/search";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
-import { MdOutlineFavoriteBorder } from "react-icons/md";
+import {
+  MdOutlineFavoriteBorder,
+  MdOutlineAccountCircle,
+  MdOutlineExplore,
+} from "react-icons/md";
+import { CgHome } from "react-icons/cg";
+import { IoTrophyOutline } from "react-icons/io5";
 
 function App() {
   return (
@@ -13,14 +19,20 @@ function App() {
       <header>
         <div className="header">
           <div className="icon">
-            <HiOutlineMenuAlt2 size="25" color="#101010" />
+            <HiOutlineMenuAlt2 size="25" color="#262626" />
           </div>
-          <div className="righticon">
+          <div className="icon">
             <div className="icon-heart">
-              <MdOutlineFavoriteBorder size="20" color="white" />
+              <MdOutlineFavoriteBorder size="25" color="#262626" />
               <div className="dotnotif"></div>
             </div>
           </div>
+          {/* <div className="righticon">
+            <div className="icon-heart">
+              <MdOutlineFavoriteBorder size="25" color="#101010" />
+              <div className="dotnotif"></div>
+            </div>
+          </div> */}
         </div>
       </header>
       <main className="main">
@@ -30,6 +42,22 @@ function App() {
           <Route path="/jersey/search" element={<Search />} />
         </Routes>
       </main>
+      <footer>
+        <div className="containernav">
+          <NavLink to="/" className="iconwrapper">
+            <CgHome className="boticon" />
+          </NavLink>
+          <NavLink to="/search" className="iconwrapper">
+            <MdOutlineExplore className="boticon" />
+          </NavLink>
+          <NavLink to="/none" className="iconwrapper">
+            <IoTrophyOutline className="boticon" />
+          </NavLink>
+          <NavLink to="/profile" className="iconwrapper">
+            <MdOutlineAccountCircle className="boticon" />
+          </NavLink>
+        </div>
+      </footer>
     </div>
   );
 }

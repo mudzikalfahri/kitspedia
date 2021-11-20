@@ -1,12 +1,22 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+  --primary: #262626;
+  --secondary: #aaefc8;
+  --secondarylight: #c1f9d9;
+  --active: #94f0bc;
+  --alter: #e1f0c7;
+  --bggray: #fafafa;
+}
+
+.App {
+  background-color: var(--bggray);
 }
 
 .main {
-  max-width: 720px;
+  max-width: 768px;
   margin: auto;
   min-height: 100vh;
 }
@@ -19,12 +29,13 @@ header {
 }
 
 .header {
-  max-width: 720px;
+  max-width: 768px;
   margin: auto;
-  overflow: hidden;
   display: flex;
-  height: 60px;
+  height: 80px;
+  background-color: var(--bggray);
   align-items: center;
+  padding: 0 10px;
   justify-content: space-between;
   border-radius: 20px 20px 0 0;
 }
@@ -33,6 +44,7 @@ header {
   border-radius: 0px 0px 0px 20px;
   height: 100%;
   display: flex;
+  padding: 0px 12px;
   align-items: center;
 }
 
@@ -43,14 +55,6 @@ header {
 .logo {
   display: flex;
   align-items: center;
-}
-.righticon {
-  border-radius: 0px 0px 0px 20px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding: 0px 12px;
-  background-color: #101010;
 }
 
 .icon-heart {
@@ -65,4 +69,60 @@ header {
   background-color: #ff3232;
   top: 2px;
   right: 1px;
+}
+
+footer {
+  background-color: var(--alter);
+  width: 100%;
+  position: fixed;
+  z-index: 20;
+  bottom: 0;
+  left: 0;
+}
+
+.containernav {
+  padding: 20px 0px;
+  max-width: 768px;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 480px) {
+  .containernav {
+    padding: 30px 0px;
+  }
+}
+
+.iconwrapper {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.boticon {
+  font-size: 18px;
+}
+
+.active {
+  color: black;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bggray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.08);
+  border: 10px solid transparent;
+  border-radius: 8px;
+  background-clip: padding-box;
 }
