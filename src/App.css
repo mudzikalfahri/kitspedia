@@ -24,6 +24,7 @@
 header {
   width: 100%;
   position: fixed;
+  z-index: 30;
   top: 0;
   left: 0;
 }
@@ -72,7 +73,6 @@ header {
 }
 
 footer {
-  background-color: var(--alter);
   width: 100%;
   position: fixed;
   z-index: 20;
@@ -81,6 +81,8 @@ footer {
 }
 
 .containernav {
+  background-color: var(--alter);
+  border-radius: 20px 20px 0 0;
   padding: 20px 0px;
   max-width: 768px;
   display: flex;

@@ -1,0 +1,47 @@
+.hero {
+  padding: 1rem;
+  margin-bottom: 30px;
+}
+
+.herotitle {
+  font-size: 36px;
+  width: 50%;
+  color: #101010;
+  margin-bottom: 15px;
+}
+
+.searchbar {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.02);
+}
+
+.searchbar input {
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  flex: 1;
+  font-size: 12px;
+}
+.searchbar input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.searchcircle {
+  background-color: var(--secondary);
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.searchicon {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+}
