@@ -23,63 +23,18 @@
   border-radius: 20px;
 }
 
-.club-img-favorite {
-  border-radius: 20px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.02);
-}
-
-.club-img-favorite:hover {
-  filter: brightness(0.95);
-  transition-duration: 0.3s;
-  cursor: pointer;
-}
-.club-img-favorite img {
-  width: 300px;
-  margin: auto;
-}
 .carousel-item {
   width: 300px !important;
+  display: flex;
+  justify-content: center;
 }
 
 .slider-jersey {
   width: 100%;
 }
 
-.club-info-favorite {
-  margin-top: 15px;
-  background-color: white;
-  padding: 1rem;
-  border-radius: 20px;
-}
-
-.club-info-favorite h3 {
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.jersey-type {
-  padding: 10px 20px;
-  background-color: var(--secondary);
-}
-
-.jersey-type p {
-  font-size: 14px;
-  color: var(--primary);
-}
 @media (max-width: 480px) {
   .carousel-item {
     width: 250px !important;
-  }
-  .club-img-favorite img {
-    width: 250px;
-    margin: auto;
-  }
-  .jersey-type p {
-    font-size: 12px;
-    color: var(--primary);
   }
 }

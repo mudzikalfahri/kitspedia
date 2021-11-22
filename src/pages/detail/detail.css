@@ -1,0 +1,27 @@
+.detailpage {
+  max-width: 758px;
+  margin: auto;
+  background-color: var(--bggray);
+  min-height: 100vh;
+}
+
+.detailpage > header {
+  position: fixed;
+  width: 100%;
+}
+
+.detail-header {
+  max-width: 768px;
+  padding: 14px 20px;
+}
+
+.detail-back-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+  background-color: white;
+  box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.02);
+}

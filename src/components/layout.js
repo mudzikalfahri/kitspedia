@@ -1,9 +1,4 @@
 import React from "react";
-import { NavLink, Route, Routes } from "react-router-dom";
-import "./App.css";
-import Detail from "./pages/detail/detail";
-import Home from "./pages/home/home";
-import Search from "./pages/search/search";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import {
   MdOutlineFavoriteBorder,
@@ -12,11 +7,12 @@ import {
 } from "react-icons/md";
 import { CgHome } from "react-icons/cg";
 import { IoTrophyOutline } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
 
-function App() {
+function Layout({ children }) {
   return (
-    <div className="App">
-      {/* <header>
+    <div>
+      <header class="layout-header">
         <div className="header">
           <div className="icon">
             <HiOutlineMenuAlt2 size="25" color="#262626" />
@@ -28,15 +24,9 @@ function App() {
             </div>
           </div>
         </div>
-      </header> */}
-      {/* <main className="main"> */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/jersey/:id" element={<Detail />} />
-        <Route path="/jersey/search" element={<Search />} />
-      </Routes>
-      {/* </main> */}
-      {/* <footer>
+      </header>
+      <main className="main">{children}</main>
+      <footer>
         <div className="containernav">
           <NavLink to="/" className="iconwrapper">
             <CgHome className="boticon" />
@@ -51,9 +41,9 @@ function App() {
             <MdOutlineAccountCircle className="boticon" />
           </NavLink>
         </div>
-      </footer> */}
+      </footer>
     </div>
   );
 }
 
-export default App;
+export default Layout;
