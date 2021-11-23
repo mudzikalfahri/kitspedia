@@ -1,0 +1,12 @@
+.skeleton-slider {
+  display: flex !important;
+  align-items: center !important;
+  overflow-x: auto !important;
+  gap: 0 20px;
+}
+.skeleton {
+  margin: 0 !important;
+  border-radius: 30px !important;
+  width: 290px !important;
+  height: 350px !important;
+}

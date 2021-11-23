@@ -1,7 +1,8 @@
 .detailpage {
+  background-color: rgba(0, 0, 0, 0.01);
   max-width: 758px;
   margin: auto;
-  background-color: var(--bggray);
+  color: var(--primary);
   min-height: 100vh;
 }
 
@@ -12,6 +13,9 @@
 
 .detail-header {
   max-width: 768px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 14px 20px;
 }
 
@@ -22,6 +26,177 @@
   justify-content: center;
   border-radius: 50%;
   align-items: center;
+  transition-duration: 0.2s;
   background-color: white;
   box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.02);
+}
+
+.detail-back-button:hover {
+  background-color: var(--alter);
+}
+
+.detail-main {
+  width: 100%;
+}
+
+.top-main {
+  padding: 40px;
+  padding-top: 60px;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  gap: 30px;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selected-container-item {
+  flex: 0.25;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container-item {
+  flex: 0.75;
+  height: 400px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary);
+  border-radius: 20px 0 0 20px;
+}
+
+.image-container-item > h4 {
+  position: absolute;
+  top: 30px;
+  font-weight: 600;
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.image-container-item > img {
+  width: 400px;
+}
+
+.select-item {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.02);
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+.select-item:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.select-item > img {
+  width: 60px;
+}
+
+@media (max-width: 480px) {
+  .top-main {
+    flex-direction: column-reverse;
+  }
+  .selected-container-item {
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .select-item {
+    padding: 20px;
+    margin: 5px;
+  }
+}
+
+.club-name {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.club-name > img {
+  width: 40px;
+}
+
+.club-name > h3 {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.desc-jersey {
+  padding: 20px 2rem;
+}
+
+.menu-desc {
+  padding: 8px 14px;
+  background-color: var(--alter);
+  border-radius: 10px;
+  font-size: 14px;
+  display: inline;
+}
+
+.desc-jersey > p {
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 1.5rem;
+}
+
+.specs {
+  padding: 0 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.bottom-main {
+  background-color: white;
+  padding: 40px 0;
+  border-radius: 30px 30px 0 0;
+}
+
+.likes-section {
+  background-color: var(--bggray);
+  border-radius: 20px;
+  margin: 0 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.02);
+}
+
+.likes-section > div {
+  padding: 10px 0;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.likes-section > .likes {
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.8);
+}
+.likes-section > .material {
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.8);
+}
+.likes-section > .season {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.likes > p {
+  font-size: 14px;
+  margin: 2px;
+}
+.material > p {
+  font-size: 14px;
+  margin: 2px;
+}
+.season > p {
+  font-size: 14px;
+  margin: 2px;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import "./competitionlist.css";
+import LeagueCard from "./leaguecard";
 
 function CompetitionList() {
   const league = [
@@ -50,14 +51,7 @@ function CompetitionList() {
       </div>
       <div className="top-list-league">
         {league.map((i, idx) => (
-          <div key={idx} className="clickable-league">
-            <img src={i.img} alt="" />
-            <div className="clickable-des">
-              <p className="clickable-des-title">{i.name}</p>
-              <p className="clickable-des-year">2020/2021</p>
-              <div className="country">{i.country}</div>
-            </div>
-          </div>
+          <LeagueCard item={i} key={idx} />
         ))}
       </div>
     </div>

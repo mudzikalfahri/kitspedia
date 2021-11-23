@@ -1,0 +1,76 @@
+.league-page {
+  padding: 80px 0;
+  min-height: 100vh;
+  background-color: var(--bggray);
+}
+
+.league-banner {
+  height: 200px;
+  background-color: var(--secondary);
+  border-radius: 30px;
+  display: flex;
+  margin: 0 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.league-banner img {
+  width: 90px;
+}
+
+.league-banner .title-league {
+  font-size: 18px;
+  margin: 8px 0;
+}
+.league-banner .season-league {
+  font-size: 12px;
+}
+.clubcard {
+  color: var(--primary);
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition-duration: 0.2s;
+}
+
+.clubcard:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.clubcard > img {
+  width: 90px;
+  margin-right: 10px;
+}
+.detail-clubcard > .clubcard-name {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+.clubcard-name > img {
+  margin-right: 5px;
+  width: 20px;
+}
+.detail-clubcard > .apparel {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.detail-clubcard > .season {
+  font-size: 12px;
+}
+.list-container {
+  padding: 20px 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media (max-width: 480px) {
+  .list-container {
+    grid-template-columns: 1fr;
+  }
+}

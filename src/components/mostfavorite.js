@@ -3,14 +3,22 @@ import "./mostfavorite.css";
 import Slider from "infinite-react-carousel";
 import { useState, useEffect } from "react";
 import FavoriteCard from "./favoritecard";
+import SkeletonFavoriteClub from "./skeleton/skeletonfavoriteclub";
 
 function MostFavorite() {
   const [data, setData] = useState([]);
+  console.log(process.env.APIURL);
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("http://localhost:8000/api/jerseys/favorite");
-      const result = await res.json();
-      setData(result);
+      try {
+        const res = await fetch(
+          "https://kitspedia-jersey-api.herokuapp.com/api/jerseys/favorite"
+        );
+        const result = await res.json();
+        setData(result);
+      } catch (err) {
+        console.log(err.message);
+      }
     };
     fetchData();
   }, []);
@@ -55,7 +63,7 @@ function MostFavorite() {
               ))}
           </Slider>
         ) : (
-          "loading"
+          <SkeletonFavoriteClub />
         )}
       </div>
     </div>

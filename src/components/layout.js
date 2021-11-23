@@ -12,7 +12,7 @@ import { NavLink } from "react-router-dom";
 function Layout({ children }) {
   return (
     <div>
-      <header class="layout-header">
+      <header className="layout-header">
         <div className="header">
           <div className="icon">
             <HiOutlineMenuAlt2 size="25" color="#262626" />
@@ -25,7 +25,7 @@ function Layout({ children }) {
           </div>
         </div>
       </header>
-      <main className="main">{children}</main>
+      <div className="main">{children}</div>
       <footer>
         <div className="containernav">
           <NavLink to="/" className="iconwrapper">
@@ -34,7 +34,7 @@ function Layout({ children }) {
           <NavLink to="/search" className="iconwrapper">
             <MdOutlineExplore className="boticon" />
           </NavLink>
-          <NavLink to="/none" className="iconwrapper">
+          <NavLink to="/competition" className="iconwrapper">
             <IoTrophyOutline className="boticon" />
           </NavLink>
           <NavLink to="/profile" className="iconwrapper">
