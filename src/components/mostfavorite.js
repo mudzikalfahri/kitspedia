@@ -4,10 +4,10 @@ import Slider from "infinite-react-carousel";
 import { useState, useEffect } from "react";
 import FavoriteCard from "./favoritecard";
 import SkeletonFavoriteClub from "./skeleton/skeletonfavoriteclub";
+import { Link } from "react-router-dom";
 
 function MostFavorite() {
   const [data, setData] = useState([]);
-  console.log(process.env.APIURL);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -26,10 +26,15 @@ function MostFavorite() {
   return (
     <div className="top-favorite">
       <div className="favorite-title">
-        <div className="img-title">
-          <img src="/badge.png" className="trophy-icon" alt="" />
+        <div className="leftfavtitle">
+          <div className="img-title">
+            <img src="/badge.png" className="trophy-icon" alt="" />
+          </div>
+          <h3>Most Favorite Jersey</h3>
         </div>
-        <h3>Most Favorite Jersey</h3>
+        <Link to="/top10kits">
+          <div className="show-all">Show All</div>
+        </Link>
       </div>
       <div className="showcase-top-jersey">
         {data.length ? (

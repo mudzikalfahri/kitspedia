@@ -7,6 +7,7 @@ function SkeletonFavoriteClub() {
     <div className="skeleton-slider">
       <Skeleton className="skeleton" />
       <Skeleton className="skeleton" />
+      <Skeleton className="skeleton" />
     </div>
   );
 }

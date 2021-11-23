@@ -5,7 +5,7 @@ import "./favoritecard.css";
 function FavoriteCard({ club, img, logo }) {
   return (
     <Link to={"/jersey/" + club}>
-      <div className="club-img-favorite">
+      <div className="club-img-favorite button">
         <img src={img} alt="" className="jerseyimgimg" />
         <div className="jersey-type">
           <div className="jersey-type-img">

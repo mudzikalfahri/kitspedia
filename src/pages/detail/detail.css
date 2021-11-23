@@ -9,6 +9,7 @@
 .detailpage > header {
   position: fixed;
   width: 100%;
+  z-index: 30;
 }
 
 .detail-header {
@@ -95,6 +96,7 @@
 }
 .select-item > img {
   width: 60px;
+  height: 60px;
 }
 
 @media (max-width: 480px) {
@@ -110,6 +112,9 @@
     padding: 20px;
     margin: 5px;
   }
+  .top-main {
+    padding-top: 0;
+  }
 }
 
 .club-name {
@@ -117,6 +122,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-bottom: 10px;
 }
 
 .club-name > img {
@@ -152,7 +158,8 @@
 
 .bottom-main {
   background-color: white;
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 80px;
   border-radius: 30px 30px 0 0;
 }
 
@@ -199,4 +206,67 @@
 .season > p {
   font-size: 14px;
   margin: 2px;
+}
+
+.foot-container {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.foot-container > .footer {
+  max-width: 368px;
+  margin: auto;
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  justify-content: center;
+  padding: 20px 0;
+  align-items: center;
+  color: white;
+  gap: 0 10px;
+  font-size: 14px;
+  box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fc7272;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+.foot-container > .footer:hover {
+  filter: brightness(1.05);
+}
+
+.loadingdata {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--primary);
+}
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.bounce {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  animation: bounce 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  background-color: var(--primary);
+}
+.clicking-loading {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 30;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.6);
 }

@@ -7,6 +7,6 @@
 .skeleton {
   margin: 0 !important;
   border-radius: 30px !important;
-  width: 290px !important;
+  min-width: 290px !important;
   height: 350px !important;
 }

@@ -5,10 +5,15 @@
 .favorite-title {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-left: 1rem;
 }
 .favorite-title .trophy-icon {
   width: 20px;
+}
+.leftfavtitle {
+  display: flex;
+  align-items: center;
 }
 .favorite-title h3 {
   margin-left: 10px;
@@ -16,6 +21,12 @@
   font-size: 14px;
   font-weight: 400;
   color: var(--primary);
+}
+
+.show-all {
+  font-size: 14px;
+  margin-right: 1rem;
+  color: rgba(0, 0, 0, 0.4) !important;
 }
 
 .showcase-top-jersey {

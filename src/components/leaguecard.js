@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function LeagueCard({ item }) {
   return (
     <Link to={`/league?name=` + item.slug}>
-      <div className="clickable-league">
+      <div className="clickable-league button">
         <img src={item.img} alt="" />
         <div className="clickable-des">
           <p className="clickable-des-title">{item.name}</p>

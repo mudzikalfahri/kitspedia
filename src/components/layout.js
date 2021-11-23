@@ -31,7 +31,7 @@ function Layout({ children }) {
           <NavLink to="/" className="iconwrapper">
             <CgHome className="boticon" />
           </NavLink>
-          <NavLink to="/search" className="iconwrapper">
+          <NavLink to="/top10kits" className="iconwrapper">
             <MdOutlineExplore className="boticon" />
           </NavLink>
           <NavLink to="/competition" className="iconwrapper">

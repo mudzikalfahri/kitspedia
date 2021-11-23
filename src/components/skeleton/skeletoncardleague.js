@@ -9,9 +9,6 @@ function SkeletonCardleague() {
       <Skeleton className="skeletonleague" />
       <Skeleton className="skeletonleague" />
       <Skeleton className="skeletonleague" />
-      <Skeleton className="skeletonleague" />
-      <Skeleton className="skeletonleague" />
-      <Skeleton className="skeletonleague" />
     </>
   );
 }
