@@ -31,10 +31,10 @@ function Layout({ children }) {
           <NavLink to="/" className="iconwrapper">
             <CgHome className="boticon" />
           </NavLink>
-          <NavLink to="/top10kits" className="iconwrapper">
+          <NavLink to="/search?q=" className="iconwrapper">
             <MdOutlineExplore className="boticon" />
           </NavLink>
-          <NavLink to="/competition" className="iconwrapper">
+          <NavLink to="/top10kits" className="iconwrapper">
             <IoTrophyOutline className="boticon" />
           </NavLink>
           <NavLink to="/profile" className="iconwrapper">

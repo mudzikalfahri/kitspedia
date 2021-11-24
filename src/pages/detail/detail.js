@@ -13,6 +13,7 @@ function Detail() {
   const [jersey, setJersey] = useState([]);
   const [selected, setSelected] = useState(0);
   const [clicking, setClicking] = useState(false);
+  const [like, setLike] = useState(0);
   const doLike = async () => {
     setClicking(true);
     try {
@@ -21,6 +22,7 @@ function Detail() {
           data._id
       );
       setClicking(false);
+      setLike((prev) => prev + 1);
     } catch (err) {
       console.log(err);
       setClicking(false);
@@ -36,6 +38,7 @@ function Detail() {
         const result = await res.json();
         const jersey = result[0];
         setData(result[0]);
+        setLike(jersey.views);
         setJersey([jersey.home, jersey.away, jersey.third]);
       } catch (err) {
         console.log(err.message);
@@ -83,7 +86,7 @@ function Detail() {
           <div className="likes-section">
             <div className="likes">
               <p>Likes</p>
-              <p>{data.views} likes</p>
+              <p>{like} likes</p>
             </div>
             <div className="material">
               <p>Material</p>

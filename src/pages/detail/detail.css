@@ -99,24 +99,6 @@
   height: 60px;
 }
 
-@media (max-width: 480px) {
-  .top-main {
-    flex-direction: column-reverse;
-  }
-  .selected-container-item {
-    flex: 1;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .select-item {
-    padding: 20px;
-    margin: 5px;
-  }
-  .top-main {
-    padding-top: 0;
-  }
-}
-
 .club-name {
   padding: 0 2rem;
   display: flex;
@@ -269,4 +251,32 @@
   z-index: 30;
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 480px) {
+  .top-main {
+    flex-direction: column-reverse;
+  }
+  .selected-container-item {
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .select-item {
+    padding: 20px;
+    margin: 5px;
+  }
+  .top-main {
+    padding-top: 0;
+  }
+  .likes-section {
+    margin-bottom: 0;
+    border-radius: 0;
+    margin: 0;
+  }
+  .foot-container > .footer {
+    margin-bottom: 0;
+    border-radius: 0;
+    margin: 0;
+  }
 }

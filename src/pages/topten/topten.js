@@ -25,7 +25,7 @@ function TopTen() {
         <div className="title-topten">
           <img src="/trophy.png" alt="" />
           <h4>Top 10 Kits around The World</h4>
-          <p>Here are top 10 club's jersey by likes count</p>
+          <p>Here are the top 10 club jerseys by number of likes</p>
         </div>
         <div className="list-topten">
           {data.length ? (
