@@ -17,6 +17,11 @@
   flex-direction: column;
   color: var(--primary);
 }
+@media (max-width: 480px) {
+  .search-page-main {
+    grid-template-columns: 1fr;
+  }
+}
 @keyframes bounce {
   from {
     transform: translate3d(0, 20px, 0);

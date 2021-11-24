@@ -37,7 +37,7 @@ function Layout({ children }) {
           <NavLink to="/top10kits" className="iconwrapper">
             <IoTrophyOutline className="boticon" />
           </NavLink>
-          <NavLink to="/profile" className="iconwrapper">
+          <NavLink to="/about" className="iconwrapper">
             <MdOutlineAccountCircle className="boticon" />
           </NavLink>
         </div>

@@ -1,0 +1,41 @@
+.about-page {
+  display: flex;
+  padding-top: 140px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about-page > img {
+  width: 140px;
+}
+.about-page > h4 {
+  margin: auto;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 14px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.about-page > p {
+  font-size: 14px;
+  margin-top: 14px;
+  width: 400px;
+  text-align: center;
+}
+.github-button {
+  padding: 6px 12px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.github-button img {
+  width: 20px;
+  margin-right: 5px;
+}
+.github-button > p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+}
